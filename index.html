@@ -1,189 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coworking | Spacehub Barcelona | Sarria - Sant Gervasi</title>
-<meta name="description" content="A new kind of space for entrepreneurs, startups, and freelancers to form a community based on networking, innovation and fun.">
+<title>Coworking en Barcelona, Sant Gervasi | Spacehub</title>
+<meta name="description" content="Coworking en Sant Gervasi, Barcelona: mesas flexibles, salas de reuniones y sala de eventos. Acceso 24/7, internet de alta velocidad y café incluido.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://spacehub.barcelona/">
+<link rel="alternate" hreflang="es" href="https://spacehub.barcelona/">
+<link rel="alternate" hreflang="en" href="https://spacehub.barcelona/en/">
+<link rel="alternate" hreflang="x-default" href="https://spacehub.barcelona/">
+<meta name="theme-color" content="#000000">
+<meta name="geo.region" content="ES-CT">
+<meta name="geo.placename" content="Barcelona">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Spacehub Barcelona">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Spacehub — Coworking en Sant Gervasi, Barcelona">
+<meta property="og:description" content="Coworking en Sant Gervasi, Barcelona: mesas flexibles, salas de reuniones y sala de eventos. Acceso 24/7, internet de alta velocidad y café incluido.">
+<meta property="og:url" content="https://spacehub.barcelona/">
+<meta property="og:image" content="https://static.wixstatic.com/media/5e66d6_9e5f1ca8f7f94405ae538fa05c7bca74~mv2.jpg/v1/fill/w_1200,h_630,al_c,q_85/coworking-spacehub-barcelona-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Spacehub — Coworking en Sant Gervasi, Barcelona">
+<meta name="twitter:description" content="Coworking en Sant Gervasi, Barcelona: mesas flexibles, salas de reuniones y sala de eventos. Acceso 24/7, internet de alta velocidad y café incluido.">
+<meta name="twitter:image" content="https://static.wixstatic.com/media/5e66d6_9e5f1ca8f7f94405ae538fa05c7bca74~mv2.jpg/v1/fill/w_1200,h_630,al_c,q_85/coworking-spacehub-barcelona-og.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="https://static.wixstatic.com/media/5e66d6_f48f99903a384c449490dd30f2d2d5b4~mv2.png">
+<link rel="preconnect" href="https://static.wixstatic.com">
+<link rel="preload" as="image" href="https://static.wixstatic.com/media/5e66d6_9e5f1ca8f7f94405ae538fa05c7bca74~mv2.jpg/v1/fill/w_1920,h_1238,al_c,q_80/coworking-spacehub-barcelona.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&family=Raleway:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet">
-<style>
-  :root{--blue:#248cfc;--deep:#0a5cc2;--black:#000;--white:#fff}
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:'Raleway',sans-serif;color:var(--white);background:var(--black);line-height:1.6}
-  a{color:inherit;text-decoration:none}
-  .wrap{max-width:1180px;margin:0 auto;padding:0 40px}
-  h1,h2,h3{font-family:'Libre Franklin',sans-serif;font-weight:700;text-transform:uppercase;line-height:1.1}
-
-  /* Header */
-  header{position:sticky;top:0;z-index:50;background:#000;height:64px}
-  header .wrap{display:flex;align-items:center;justify-content:space-between;height:100%}
-  .logo img{height:38px;display:block}
-  nav{display:flex;align-items:center;gap:28px;font-family:'Libre Franklin',sans-serif;font-size:15px;font-weight:700}
-  nav a:hover{color:var(--blue)}
-  .lang{font-family:'Raleway';font-weight:400;font-size:13px;opacity:.8}
-  .contact-top{display:flex;align-items:center;gap:24px;font-family:'Libre Franklin',sans-serif;font-weight:300;font-size:14px}
-  .contact-top svg{width:14px;height:14px;fill:#fff}
-  .menu-btn{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer}
-
-  /* Hero */
-  .hero{position:relative;min-height:700px;display:flex;align-items:center;
-    background:url('https://static.wixstatic.com/media/5e66d6_9e5f1ca8f7f94405ae538fa05c7bca74~mv2.jpg/v1/fill/w_2000,h_1290,al_c,q_85/hero.jpg') center/cover no-repeat}
-  .hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.15)}
-  .hero .wrap{position:relative;width:100%}
-  .hero h1{font-size:clamp(48px,7vw,90px);max-width:700px;margin-bottom:24px}
-  .hero p{font-family:'Playfair Display',serif;font-style:italic;font-size:20px;max-width:330px;line-height:1.35;margin-bottom:36px}
-  .btn{display:inline-block;background:var(--blue);color:#fff;font-family:'Raleway',sans-serif;font-size:15px;
-    text-transform:uppercase;padding:12px 20px;transition:background .2s}
-  .btn:hover{background:#0f6fd8}
-  .hero .btn{font-family:'Libre Franklin',sans-serif;font-weight:700}
-
-  /* Safe & flexible */
-  .safe{background:var(--deep);padding:90px 0;text-align:center}
-  .safe h2{font-size:40px;margin-bottom:20px}
-  .safe .lead{font-weight:600;font-size:18px;max-width:840px;margin:0 auto 18px}
-  .safe p{font-weight:300;font-size:15px;max-width:920px;margin:0 auto}
-
-  /* Spaces */
-  .spaces{padding:120px 0 80px;text-align:center}
-  section h2.title{font-size:40px;margin-bottom:80px}
-  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
-  .card img{width:100%;height:300px;object-fit:cover;display:block;margin-bottom:40px}
-  .card h3{font-size:22px;margin-bottom:24px}
-  .card p{font-weight:300;font-size:15px;max-width:300px;margin:0 auto}
-  .center{text-align:center;margin-top:80px}
-
-  /* Amenities */
-  .amenities{padding:70px 0 80px;text-align:center}
-  .amenities h2{font-size:40px;margin-bottom:28px}
-  .amenities .intro{font-weight:300;font-size:15px;max-width:920px;margin:0 auto 70px}
-  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
-  .tile{position:relative;height:500px;background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:0 40px 75px;text-align:left}
-  .tile::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.25)}
-  .tile h3{position:relative;font-size:22px;letter-spacing:.5px}
-
-  /* Join */
-  .join{padding:40px 0 40px}
-  .join-box{display:grid;grid-template-columns:1fr 1fr;background:#fff;color:#000}
-  .join-box .txt{display:flex;align-items:center;padding:60px 60px 60px 180px}
-  .join-box h2{font-family:'Playfair Display',serif;font-weight:400;font-size:40px}
-  .join-box img{width:100%;height:340px;object-fit:cover;display:block}
-  .map{height:425px;border:0;width:100%;display:block}
-
-  /* Footer */
-  footer{padding:30px 0 60px;text-align:center;font-weight:300;font-size:15px}
-  footer img{height:53px;margin-bottom:16px}
-  footer .copy{margin-top:40px;font-size:14px}
-
-  @media (max-width:900px){
-    .wrap{padding:0 20px}
-    nav,.contact-top{display:none}
-    .menu-btn{display:block}
-    header.open nav{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#000;padding:24px;gap:18px}
-    .grid3,.tiles{grid-template-columns:1fr}
-    .tile{height:380px}
-    .join-box{grid-template-columns:1fr}
-    .join-box .txt{padding:50px 30px}
-    .hero{min-height:560px}
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&family=Raleway:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "additionalType": "https://en.wikipedia.org/wiki/Coworking", "@id": "https://spacehub.barcelona/#business", "name": "Spacehub Barcelona", "alternateName": "Spacehub Coworking", "description": "Coworking en Sant Gervasi, Barcelona: mesas flexibles, salas de reuniones y sala de eventos. Acceso 24/7, internet de alta velocidad y café incluido.", "url": "https://spacehub.barcelona/", "telephone": "+34932204140", "image": ["https://static.wixstatic.com/media/5e66d6_9e5f1ca8f7f94405ae538fa05c7bca74~mv2.jpg/v1/fill/w_1200,h_630,al_c,q_85/coworking-spacehub-barcelona-og.jpg", "https://static.wixstatic.com/media/5e66d6_9e5f1ca8f7f94405ae538fa05c7bca74~mv2.jpg/v1/fill/w_1920,h_1238,al_c,q_80/coworking-spacehub-barcelona.jpg"], "logo": "https://static.wixstatic.com/media/5e66d6_f48f99903a384c449490dd30f2d2d5b4~mv2.png", "address": {"@type": "PostalAddress", "streetAddress": "Carrer de Folgueroles, 17-25", "postalCode": "08022", "addressLocality": "Barcelona", "addressRegion": "Catalunya", "addressCountry": "ES"}, "areaServed": ["Sarrià-Sant Gervasi", "Barcelona"], "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "00:00", "closes": "23:59"}, "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": "Internet de máxima velocidad y servicios para empresas digitales", "value": true}, {"@type": "LocationFeatureSpecification", "name": "Acceso 24/7 con Akiles® y servicio de office manager", "value": true}, {"@type": "LocationFeatureSpecification", "name": "Agua purificada, café recién molido y la mejor cerveza artesana con Beerbox®", "value": true}], "hasMap": "https://www.google.com/maps/search/?api=1&query=Carrer+de+Folgueroles+17,+08022+Barcelona", "parentOrganization": {"@type": "Organization", "name": "Spacelab SL"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Dónde está el coworking Spacehub?", "acceptedAnswer": {"@type": "Answer", "text": "En Carrer de Folgueroles, 17-25, 08022 Barcelona, en el distrito de Sarrià-Sant Gervasi."}}, {"@type": "Question", "name": "¿Qué incluye una mesa de coworking?", "acceptedAnswer": {"@type": "Answer", "text": "Internet de alta velocidad, servicio de impresión, acceso a las zonas comunes, café, agua purificada y cerveza artesana."}}, {"@type": "Question", "name": "¿Puedo acceder al coworking a cualquier hora?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. El edificio tiene acceso 24/7 mediante el sistema Akiles® y contamos con servicio de office manager."}}, {"@type": "Question", "name": "¿Tenéis salas de reuniones y espacio para eventos?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Tenemos salas de reuniones y una sala de eventos y comedor con 2 proyectores SONY de gran formato y sonido Dolby Surround®."}}, {"@type": "Question", "name": "¿Cómo reservo mi espacio?", "acceptedAnswer": {"@type": "Answer", "text": "Llámanos al +34 932 204 140 y te enseñamos el espacio y las opciones disponibles."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Spacehub Barcelona", "url": "https://spacehub.barcelona/", "inLanguage": "es"}</script>
 </head>
 <body>
-
+<a class="skip" href="#main">Saltar al contenido</a>
 <header id="top">
   <div class="wrap">
-    <a href="#top" class="logo"><img src="https://static.wixstatic.com/media/5e66d6_f48f99903a384c449490dd30f2d2d5b4~mv2.png" alt="SpaceHub Barcelona"></a>
-    <nav>
-      <span class="lang">EN</span>
-      <a href="#top">Home</a>
-      <a href="#workspaces">Workspaces</a>
-      <a href="#amenities">Amenities</a>
-      <a href="#contact">Contact</a>
+    <a href="/" class="logo"><img src="https://static.wixstatic.com/media/5e66d6_f48f99903a384c449490dd30f2d2d5b4~mv2.png" width="143" height="38" alt="Spacehub Barcelona — coworking"></a>
+    <nav aria-label="Menú">
+      <span class="lang"><a href="/" hreflang="es" lang="es" class="on" aria-current="true">ES</a> · <a href="/en/" hreflang="en" lang="en" >EN</a></span>
+      <a href="#top">Inicio</a>
+      <a href="#espacios">Espacios</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
     </nav>
     <div class="contact-top">
-      <a href="tel:+34932204140">+34 932204140</a>
-      <a href="#contact" style="display:flex;align-items:center;gap:8px">
-        <svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
-        Get In Touch</a>
+      <a href="tel:+34932204140">+34 932 204 140</a>
+      <a href="#contacto" style="display:flex;align-items:center;gap:8px">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        Contacto</a>
     </div>
-    <button class="menu-btn" aria-label="Menu" onclick="this.closest('header').classList.toggle('open')">☰</button>
+    <button class="menu-btn" aria-label="Menú" onclick="this.closest('header').classList.toggle('open')">☰</button>
   </div>
 </header>
 
+<main id="main">
 <section class="hero">
+  <img class="hero-img" src="https://static.wixstatic.com/media/5e66d6_9e5f1ca8f7f94405ae538fa05c7bca74~mv2.jpg/v1/fill/w_1920,h_1238,al_c,q_80/coworking-spacehub-barcelona.jpg" width="1920" height="1238" fetchpriority="high" alt="Zona de trabajo del coworking Spacehub en Sant Gervasi, Barcelona">
   <div class="wrap">
-    <h1>Welcome to Spacehub</h1>
-    <p>A new kind of space for entrepreneurs, startups, and freelancers to form a community based on networking, innovation and fun.</p>
-    <a href="#contact" class="btn">Get my space now</a>
+    <h1><span class="eyebrow">Coworking en Sant Gervasi · Barcelona</span>Bienvenido a Spacehub</h1>
+    <p>Un nuevo tipo de espacio para emprendedores, startups y freelancers: una comunidad basada en el networking, la innovación y la diversión.</p>
+    <a href="#contacto" class="btn">Quiero mi espacio</a>
   </div>
 </section>
 
 <section class="safe">
   <div class="wrap">
-    <h2>Safe &amp; Flexible</h2>
-    <p class="lead">If you're looking for a Flexible, Dinamic and Healthy workspace prepared for the new era of mixed homeoffice/face-to-face work, then Spacehub is your solution.</p>
-    <p>At Spacehub, the health and safety of our members and employees is our top priority. Here you'll find a healthy and secure space. We follow all the recommendations and safety protocols from the spanish Ministerio de Sanidad.<br>
-    A part from the mesures we've applied our workspace is social-distance ready because of the dimensions of our facilities. Where a Coworking or common office has ratio of 5 sqm x 1 person we have a 15:1.</p>
+    <h2>Seguro y flexible</h2>
+    <p class="lead">Si buscas un espacio de trabajo flexible, dinámico y saludable, preparado para la nueva era del trabajo híbrido entre casa y oficina, Spacehub es tu solución.</p>
+    <p>En Spacehub, la salud y la seguridad de nuestros miembros y empleados es nuestra prioridad: aquí encontrarás un espacio sano y seguro. Gracias a las dimensiones de nuestras instalaciones, mientras un coworking u oficina habitual tiene una ratio de 5 m² por persona, nosotros tenemos 15 m² por persona.</p>
   </div>
 </section>
 
-<section class="spaces" id="workspaces">
+<section class="spaces" id="espacios">
   <div class="wrap">
-    <h2 class="title">Our Spaces</h2>
+    <h2 class="title">Nuestros espacios</h2>
     <div class="grid3">
-      <div class="card">
-        <img src="https://static.wixstatic.com/media/5e66d6_10d742c07e3d455593975238a9d6af29~mv2_d_3000_1968_s_2.jpg/v1/fill/w_800,h_600,al_c,q_85/desks.jpg" alt="Working desks">
-        <h3>Working Desks</h3>
-        <p>At Spacehub, our custom workspace options can be adapted to all your professional needs. This is a great option for freelancers and startups with flexible schedules that are looking for an affordable space to work in. Not to mention our Coworking Desks come with high-speed internet, printing services and more.</p>
-      </div>
-      <div class="card">
-        <img src="https://static.wixstatic.com/media/5e66d6_80dcfcafa7e34996b57dbda3830e3afb~mv2_d_2807_1790_s_2.jpg/v1/fill/w_800,h_600,al_c,q_85/dining.jpg" alt="Dining & events room">
-        <h3>Dining &amp; Events Room</h3>
-        <p>The real core of the Spacehub: our auditorium &amp; dining room. Whether it's for the coolest event in town or for a drink with your hubmates, fits them all. It incorporates 2 large format SONY projectors, 2 toilets, a microkitchen with fresh beer and our Dolby Surround® multimedia sound system.</p>
-      </div>
-      <div class="card">
-        <img src="https://static.wixstatic.com/media/5e66d6_b526439ab24842328531c8693cdf7436~mv2_d_3000_1929_s_2.jpg/v1/fill/w_800,h_600,al_c,q_85/meeting.jpg" alt="Meeting rooms">
-        <h3>Meeting Rooms</h3>
-        <p>Entrepreneurship is in the air at Spacehub, and our Meeting Rooms make the perfect places for this vibe to rub off on you. As with all of our workspaces, this option comes with our full range of benefits and facility amenities. Join our energetic and vibrant community and find a home for you and your business.</p>
-      </div>
+      <article class="card">
+        <img src="https://static.wixstatic.com/media/5e66d6_10d742c07e3d455593975238a9d6af29~mv2_d_3000_1968_s_2.jpg/v1/fill/w_800,h_600,al_c,q_80/spacehub-1.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Puestos de trabajo en el coworking Spacehub de Barcelona">
+        <h3>Mesas de coworking</h3>
+        <p>Nuestras opciones de espacio de trabajo se adaptan a todas tus necesidades profesionales. Una gran opción para freelancers y startups con horarios flexibles que buscan un espacio asequible. Las mesas de coworking incluyen internet de alta velocidad, servicio de impresión y mucho más.</p>
+      </article>
+      <article class="card">
+        <img src="https://static.wixstatic.com/media/5e66d6_80dcfcafa7e34996b57dbda3830e3afb~mv2_d_2807_1790_s_2.jpg/v1/fill/w_800,h_600,al_c,q_80/spacehub-2.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Sala de eventos y comedor de Spacehub Barcelona">
+        <h3>Sala de eventos y comedor</h3>
+        <p>El verdadero corazón de Spacehub: nuestro auditorio y comedor. Sirve tanto para el evento más interesante de la ciudad como para tomar algo con tus compañeros. Cuenta con 2 proyectores SONY de gran formato, 2 baños, una micrococina con cerveza fresca y sistema de sonido multimedia Dolby Surround®.</p>
+      </article>
+      <article class="card">
+        <img src="https://static.wixstatic.com/media/5e66d6_b526439ab24842328531c8693cdf7436~mv2_d_3000_1929_s_2.jpg/v1/fill/w_800,h_600,al_c,q_80/spacehub-3.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Sala de reuniones en el coworking Spacehub, Sant Gervasi">
+        <h3>Salas de reuniones</h3>
+        <p>En Spacehub se respira emprendimiento, y nuestras salas de reuniones son el lugar perfecto para contagiarte. Como todos nuestros espacios, incluyen todas las ventajas y servicios de las instalaciones. Únete a una comunidad enérgica y encuentra un hogar para ti y tu negocio.</p>
+      </article>
     </div>
-    <div class="center"><a href="#contact" class="btn">Get my space now</a></div>
+    <div class="center"><a href="#contacto" class="btn">Quiero mi espacio</a></div>
   </div>
 </section>
 
-<section class="amenities" id="amenities">
+<section class="amenities" id="servicios">
   <div class="wrap">
-    <h2>Amenities &amp; Facilities</h2>
-    <p class="intro">At Spacehub, we know what it takes to get a business off the ground. That’s why we built a state-of-the-art Coworking Space, where you can focus on your next big project. From free coffee to high-speed internet - we’ve thought about everything you might need. Learn more about our amenities and give us a call if you have any questions.</p>
+    <h2>Servicios e instalaciones</h2>
+    <p class="intro">En Spacehub sabemos lo que cuesta poner en marcha un negocio. Por eso hemos creado un coworking de primer nivel donde puedes centrarte en tu próximo gran proyecto. Del café gratis a internet de alta velocidad: hemos pensado en todo lo que puedas necesitar. Llámanos si tienes cualquier pregunta.</p>
     <div class="tiles">
-      <div class="tile" style="background-image:url('https://static.wixstatic.com/media/nsplsh_6e70785857675133335a51~mv2_d_4076_2712_s_4_2.jpg/v1/fill/w_800,h_1000,al_c,q_85/internet.jpg')"><h3>Highest speed internet in town and services for digital companies</h3></div>
-      <div class="tile" style="background-image:url('https://static.wixstatic.com/media/5e66d6_186779c611b74ef4b12f871b95a239d5~mv2_d_2873_1860_s_2.jpg/v1/fill/w_800,h_1000,al_c,q_85/access.jpg')"><h3>24/7 building access with Akiles® and office manager service</h3></div>
-      <div class="tile" style="background-image:url('https://static.wixstatic.com/media/5e66d6_6db674d5a74041ac9592a3da9109857d~mv2_d_1672_1928_s_2.jpg/v1/fill/w_800,h_1000,al_c,q_85/beer.jpg')"><h3>Purified water, fresh blended coffe &amp; best craft beer with Beerbox®</h3></div>
+      <div class="tile">
+        <img src="https://static.wixstatic.com/media/nsplsh_6e70785857675133335a51~mv2_d_4076_2712_s_4_2.jpg/v1/fill/w_800,h_1000,al_c,q_80/spacehub-servicio-1.jpg" width="800" height="1000" loading="lazy" decoding="async" alt="Persona trabajando con portátil en Spacehub">
+        <h3>Internet de máxima velocidad y servicios para empresas digitales</h3>
+      </div>
+      <div class="tile">
+        <img src="https://static.wixstatic.com/media/5e66d6_186779c611b74ef4b12f871b95a239d5~mv2_d_2873_1860_s_2.jpg/v1/fill/w_800,h_1000,al_c,q_80/spacehub-servicio-2.jpg" width="800" height="1000" loading="lazy" decoding="async" alt="Pasillo y zona común del coworking Spacehub">
+        <h3>Acceso 24/7 con Akiles® y servicio de office manager</h3>
+      </div>
+      <div class="tile">
+        <img src="https://static.wixstatic.com/media/5e66d6_6db674d5a74041ac9592a3da9109857d~mv2_d_1672_1928_s_2.jpg/v1/fill/w_800,h_1000,al_c,q_80/spacehub-servicio-3.jpg" width="800" height="1000" loading="lazy" decoding="async" alt="Barra con grifo de cerveza en Spacehub Barcelona">
+        <h3>Agua purificada, café recién molido y la mejor cerveza artesana con Beerbox®</h3>
+      </div>
     </div>
-    <div class="center"><a href="#contact" class="btn">Get my space now</a></div>
+    <div class="center"><a href="#contacto" class="btn">Quiero mi espacio</a></div>
   </div>
 </section>
 
-<section class="join" id="contact">
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Dónde está el coworking Spacehub?</summary><p>En Carrer de Folgueroles, 17-25, 08022 Barcelona, en el distrito de Sarrià-Sant Gervasi.</p></details>
+    <details><summary>¿Qué incluye una mesa de coworking?</summary><p>Internet de alta velocidad, servicio de impresión, acceso a las zonas comunes, café, agua purificada y cerveza artesana.</p></details>
+    <details><summary>¿Puedo acceder al coworking a cualquier hora?</summary><p>Sí. El edificio tiene acceso 24/7 mediante el sistema Akiles® y contamos con servicio de office manager.</p></details>
+    <details><summary>¿Tenéis salas de reuniones y espacio para eventos?</summary><p>Sí. Tenemos salas de reuniones y una sala de eventos y comedor con 2 proyectores SONY de gran formato y sonido Dolby Surround®.</p></details>
+    <details><summary>¿Cómo reservo mi espacio?</summary><p>Llámanos al +34 932 204 140 y te enseñamos el espacio y las opciones disponibles.</p></details>
+  </div>
+</section>
+
+<section class="join" id="contacto">
   <div class="wrap">
     <div class="join-box">
-      <div class="txt"><h2>JOIN THE HUB!</h2></div>
-      <img src="https://static.wixstatic.com/media/5e66d6_d220c4bca1224ef88c8fc2ddc88f1aea~mv2_d_3000_2000_s_2.jpg/v1/fill/w_1300,h_700,al_c,q_85/team.jpg" alt="Spacehub community">
+      <div class="txt"><h2>¡ÚNETE AL HUB!</h2></div>
+      <img src="https://static.wixstatic.com/media/5e66d6_d220c4bca1224ef88c8fc2ddc88f1aea~mv2_d_3000_2000_s_2.jpg/v1/fill/w_1300,h_700,al_c,q_80/comunidad-spacehub.jpg" width="1300" height="700" loading="lazy" decoding="async" alt="Comunidad de emprendedores reunida en Spacehub">
     </div>
-    <iframe class="map" loading="lazy" title="Spacehub location"
+    <div class="visit">
+      <h2>Visítanos en Sant Gervasi</h2>
+      <address class="nap"><strong>Spacehub Barcelona</strong><br>Carrer de Folgueroles, 17-25, 08022 Barcelona<br><a href="tel:+34932204140">+34 932 204 140</a></address>
+      <p class="nap">Estamos en el barrio de Sarrià-Sant Gervasi, en la parte alta de Barcelona.</p>
+      <div class="ctas"><a class="btn" href="tel:+34932204140">Llamar ahora</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Carrer+de+Folgueroles+17,+08022+Barcelona" target="_blank" rel="noopener">Cómo llegar</a></div>
+    </div>
+    <iframe class="map" loading="lazy" title="Spacehub — Carrer de Folgueroles, 17-25, Barcelona"
       src="https://maps.google.com/maps?q=Carrer%20de%20Folgueroles%2017%2C%2008022%20Barcelona&z=16&output=embed"></iframe>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">
-    <img src="https://static.wixstatic.com/media/5e66d6_f48f99903a384c449490dd30f2d2d5b4~mv2.png" alt="SpaceHub Barcelona">
-    <p>Carrer de Folgueroles, 17, 25, 08022 Barcelona, Spain</p>
-    <p class="copy">©2020 Spacelab SL · Made in the lovely city of Barcelona.</p>
+    <img src="https://static.wixstatic.com/media/5e66d6_f48f99903a384c449490dd30f2d2d5b4~mv2.png" width="200" height="53" loading="lazy" alt="Spacehub Barcelona">
+    <p>Carrer de Folgueroles, 17-25, 08022 Barcelona · <a href="tel:+34932204140">+34 932 204 140</a></p>
+    <p class="copy">© Spacelab SL · Hecho en la preciosa ciudad de Barcelona.</p>
   </div>
 </footer>
-
 </body>
 </html>
