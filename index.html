@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coworking | Spacehub Barcelona | Sarria - Sant Gervasi</title>
+<meta name="description" content="A new kind of space for entrepreneurs, startups, and freelancers to form a community based on networking, innovation and fun.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&family=Raleway:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+<style>
+  :root{--blue:#248cfc;--deep:#0a5cc2;--black:#000;--white:#fff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Raleway',sans-serif;color:var(--white);background:var(--black);line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+  h1,h2,h3{font-family:'Libre Franklin',sans-serif;font-weight:700;text-transform:uppercase;line-height:1.1}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:#000;height:64px}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:100%}
+  .logo img{height:38px;display:block}
+  nav{display:flex;align-items:center;gap:28px;font-family:'Libre Franklin',sans-serif;font-size:15px;font-weight:700}
+  nav a:hover{color:var(--blue)}
+  .lang{font-family:'Raleway';font-weight:400;font-size:13px;opacity:.8}
+  .contact-top{display:flex;align-items:center;gap:24px;font-family:'Libre Franklin',sans-serif;font-weight:300;font-size:14px}
+  .contact-top svg{width:14px;height:14px;fill:#fff}
+  .menu-btn{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer}
+
+  /* Hero */
+  .hero{position:relative;min-height:700px;display:flex;align-items:center;
+    background:url('https://static.wixstatic.com/media/5e66d6_9e5f1ca8f7f94405ae538fa05c7bca74~mv2.jpg/v1/fill/w_2000,h_1290,al_c,q_85/hero.jpg') center/cover no-repeat}
+  .hero::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.15)}
+  .hero .wrap{position:relative;width:100%}
+  .hero h1{font-size:clamp(48px,7vw,90px);max-width:700px;margin-bottom:24px}
+  .hero p{font-family:'Playfair Display',serif;font-style:italic;font-size:20px;max-width:330px;line-height:1.35;margin-bottom:36px}
+  .btn{display:inline-block;background:var(--blue);color:#fff;font-family:'Raleway',sans-serif;font-size:15px;
+    text-transform:uppercase;padding:12px 20px;transition:background .2s}
+  .btn:hover{background:#0f6fd8}
+  .hero .btn{font-family:'Libre Franklin',sans-serif;font-weight:700}
+
+  /* Safe & flexible */
+  .safe{background:var(--deep);padding:90px 0;text-align:center}
+  .safe h2{font-size:40px;margin-bottom:20px}
+  .safe .lead{font-weight:600;font-size:18px;max-width:840px;margin:0 auto 18px}
+  .safe p{font-weight:300;font-size:15px;max-width:920px;margin:0 auto}
+
+  /* Spaces */
+  .spaces{padding:120px 0 80px;text-align:center}
+  section h2.title{font-size:40px;margin-bottom:80px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+  .card img{width:100%;height:300px;object-fit:cover;display:block;margin-bottom:40px}
+  .card h3{font-size:22px;margin-bottom:24px}
+  .card p{font-weight:300;font-size:15px;max-width:300px;margin:0 auto}
+  .center{text-align:center;margin-top:80px}
+
+  /* Amenities */
+  .amenities{padding:70px 0 80px;text-align:center}
+  .amenities h2{font-size:40px;margin-bottom:28px}
+  .amenities .intro{font-weight:300;font-size:15px;max-width:920px;margin:0 auto 70px}
+  .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+  .tile{position:relative;height:500px;background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:0 40px 75px;text-align:left}
+  .tile::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.25)}
+  .tile h3{position:relative;font-size:22px;letter-spacing:.5px}
+
+  /* Join */
+  .join{padding:40px 0 40px}
+  .join-box{display:grid;grid-template-columns:1fr 1fr;background:#fff;color:#000}
+  .join-box .txt{display:flex;align-items:center;padding:60px 60px 60px 180px}
+  .join-box h2{font-family:'Playfair Display',serif;font-weight:400;font-size:40px}
+  .join-box img{width:100%;height:340px;object-fit:cover;display:block}
+  .map{height:425px;border:0;width:100%;display:block}
+
+  /* Footer */
+  footer{padding:30px 0 60px;text-align:center;font-weight:300;font-size:15px}
+  footer img{height:53px;margin-bottom:16px}
+  footer .copy{margin-top:40px;font-size:14px}
+
+  @media (max-width:900px){
+    .wrap{padding:0 20px}
+    nav,.contact-top{display:none}
+    .menu-btn{display:block}
+    header.open nav{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:#000;padding:24px;gap:18px}
+    .grid3,.tiles{grid-template-columns:1fr}
+    .tile{height:380px}
+    .join-box{grid-template-columns:1fr}
+    .join-box .txt{padding:50px 30px}
+    .hero{min-height:560px}
+  }
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap">
+    <a href="#top" class="logo"><img src="https://static.wixstatic.com/media/5e66d6_f48f99903a384c449490dd30f2d2d5b4~mv2.png" alt="SpaceHub Barcelona"></a>
+    <nav>
+      <span class="lang">EN</span>
+      <a href="#top">Home</a>
+      <a href="#workspaces">Workspaces</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="contact-top">
+      <a href="tel:+34932204140">+34 932204140</a>
+      <a href="#contact" style="display:flex;align-items:center;gap:8px">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        Get In Touch</a>
+    </div>
+    <button class="menu-btn" aria-label="Menu" onclick="this.closest('header').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Welcome to Spacehub</h1>
+    <p>A new kind of space for entrepreneurs, startups, and freelancers to form a community based on networking, innovation and fun.</p>
+    <a href="#contact" class="btn">Get my space now</a>
+  </div>
+</section>
+
+<section class="safe">
+  <div class="wrap">
+    <h2>Safe &amp; Flexible</h2>
+    <p class="lead">If you're looking for a Flexible, Dinamic and Healthy workspace prepared for the new era of mixed homeoffice/face-to-face work, then Spacehub is your solution.</p>
+    <p>At Spacehub, the health and safety of our members and employees is our top priority. Here you'll find a healthy and secure space. We follow all the recommendations and safety protocols from the spanish Ministerio de Sanidad.<br>
+    A part from the mesures we've applied our workspace is social-distance ready because of the dimensions of our facilities. Where a Coworking or common office has ratio of 5 sqm x 1 person we have a 15:1.</p>
+  </div>
+</section>
+
+<section class="spaces" id="workspaces">
+  <div class="wrap">
+    <h2 class="title">Our Spaces</h2>
+    <div class="grid3">
+      <div class="card">
+        <img src="https://static.wixstatic.com/media/5e66d6_10d742c07e3d455593975238a9d6af29~mv2_d_3000_1968_s_2.jpg/v1/fill/w_800,h_600,al_c,q_85/desks.jpg" alt="Working desks">
+        <h3>Working Desks</h3>
+        <p>At Spacehub, our custom workspace options can be adapted to all your professional needs. This is a great option for freelancers and startups with flexible schedules that are looking for an affordable space to work in. Not to mention our Coworking Desks come with high-speed internet, printing services and more.</p>
+      </div>
+      <div class="card">
+        <img src="https://static.wixstatic.com/media/5e66d6_80dcfcafa7e34996b57dbda3830e3afb~mv2_d_2807_1790_s_2.jpg/v1/fill/w_800,h_600,al_c,q_85/dining.jpg" alt="Dining & events room">
+        <h3>Dining &amp; Events Room</h3>
+        <p>The real core of the Spacehub: our auditorium &amp; dining room. Whether it's for the coolest event in town or for a drink with your hubmates, fits them all. It incorporates 2 large format SONY projectors, 2 toilets, a microkitchen with fresh beer and our Dolby Surround® multimedia sound system.</p>
+      </div>
+      <div class="card">
+        <img src="https://static.wixstatic.com/media/5e66d6_b526439ab24842328531c8693cdf7436~mv2_d_3000_1929_s_2.jpg/v1/fill/w_800,h_600,al_c,q_85/meeting.jpg" alt="Meeting rooms">
+        <h3>Meeting Rooms</h3>
+        <p>Entrepreneurship is in the air at Spacehub, and our Meeting Rooms make the perfect places for this vibe to rub off on you. As with all of our workspaces, this option comes with our full range of benefits and facility amenities. Join our energetic and vibrant community and find a home for you and your business.</p>
+      </div>
+    </div>
+    <div class="center"><a href="#contact" class="btn">Get my space now</a></div>
+  </div>
+</section>
+
+<section class="amenities" id="amenities">
+  <div class="wrap">
+    <h2>Amenities &amp; Facilities</h2>
+    <p class="intro">At Spacehub, we know what it takes to get a business off the ground. That’s why we built a state-of-the-art Coworking Space, where you can focus on your next big project. From free coffee to high-speed internet - we’ve thought about everything you might need. Learn more about our amenities and give us a call if you have any questions.</p>
+    <div class="tiles">
+      <div class="tile" style="background-image:url('https://static.wixstatic.com/media/nsplsh_6e70785857675133335a51~mv2_d_4076_2712_s_4_2.jpg/v1/fill/w_800,h_1000,al_c,q_85/internet.jpg')"><h3>Highest speed internet in town and services for digital companies</h3></div>
+      <div class="tile" style="background-image:url('https://static.wixstatic.com/media/5e66d6_186779c611b74ef4b12f871b95a239d5~mv2_d_2873_1860_s_2.jpg/v1/fill/w_800,h_1000,al_c,q_85/access.jpg')"><h3>24/7 building access with Akiles® and office manager service</h3></div>
+      <div class="tile" style="background-image:url('https://static.wixstatic.com/media/5e66d6_6db674d5a74041ac9592a3da9109857d~mv2_d_1672_1928_s_2.jpg/v1/fill/w_800,h_1000,al_c,q_85/beer.jpg')"><h3>Purified water, fresh blended coffe &amp; best craft beer with Beerbox®</h3></div>
+    </div>
+    <div class="center"><a href="#contact" class="btn">Get my space now</a></div>
+  </div>
+</section>
+
+<section class="join" id="contact">
+  <div class="wrap">
+    <div class="join-box">
+      <div class="txt"><h2>JOIN THE HUB!</h2></div>
+      <img src="https://static.wixstatic.com/media/5e66d6_d220c4bca1224ef88c8fc2ddc88f1aea~mv2_d_3000_2000_s_2.jpg/v1/fill/w_1300,h_700,al_c,q_85/team.jpg" alt="Spacehub community">
+    </div>
+    <iframe class="map" loading="lazy" title="Spacehub location"
+      src="https://maps.google.com/maps?q=Carrer%20de%20Folgueroles%2017%2C%2008022%20Barcelona&z=16&output=embed"></iframe>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="https://static.wixstatic.com/media/5e66d6_f48f99903a384c449490dd30f2d2d5b4~mv2.png" alt="SpaceHub Barcelona">
+    <p>Carrer de Folgueroles, 17, 25, 08022 Barcelona, Spain</p>
+    <p class="copy">©2020 Spacelab SL · Made in the lovely city of Barcelona.</p>
+  </div>
+</footer>
+
+</body>
+</html>
